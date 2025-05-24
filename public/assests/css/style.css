@@ -1,0 +1,353 @@
+/* Global body styles for light theme */
+body {
+    background-color: #f8fafc;
+    color: #1f2a44;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Main content area */
+.main-content {
+    padding: 32px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    min-height: 480px;
+    margin: 24px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+    border-radius: 0 0 10px 10px;
+    padding: 12px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #ffffff !important;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: #e6f0fa !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #1f2a44;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Footer styling */
+.footer {
+    padding: 40px 0;
+    background-color: #e2e8f0;
+    color: #475569;
+    font-size: 0.875rem;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2a44;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #475569;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #2563eb;
+}
+
+.footer .text-muted {
+    font-size: 0.85rem;
+}
+
+/* Schedule page styling */
+.schedule-overview .table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-overview .table thead {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.schedule-overview .table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.schedule-overview .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule-overview .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-overview .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2a44;
+    margin-bottom: 0.75rem;
+}
+
+.schedule-overview .card-text {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 1rem;
+}
+
+.schedule-overview .nav-tabs {
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.schedule-overview .nav-link {
+    color: #1f2a44;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.schedule-overview .nav-link:hover,
+.schedule-overview .nav-link.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+}
+
+.schedule-overview .input-group {
+    max-width: 400px;
+}
+
+.schedule-overview .form-control {
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #cbd5e1;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-overview .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.schedule-overview .input-group-text {
+    border-radius: 0 8px 8px 0;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-left: none;
+}
+
+.schedule-overview .calendar-view .card {
+    border-radius: 8px;
+}
+
+.schedule-overview .calendar-view .card-header {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.schedule-overview .calendar-view .card-body {
+    font-size: 0.8rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border-color: #2563eb;
+    color: #2563eb;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    border-color: #475569;
+    color: #475569;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #475569;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .main-content {
+        padding: 24px;
+        border-radius: 8px;
+        min-height: 360px;
+        margin: 16px 0;
+    }
+
+    .navbar {
+        padding: 8px 15px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        padding: 24px 0;
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .schedule-overview .card-title {
+        font-size: 1rem;
+    }
+
+    .schedule-overview .card-text {
+        font-size: 0.85rem;
+    }
+
+    .schedule-overview .btn-sm {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .schedule-overview .input-group {
+        max-width: 100%;
+    }
+
+    .schedule-overview .calendar-view .card-header {
+        font-size: 0.85rem;
+    }
+
+    .schedule-overview .calendar-view .card-body {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 16px;
+        border-radius: 6px;
+        min-height: 300px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 16px 0;
+        font-size: 0.8rem;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+    }
+
+    .schedule-overview .nav-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .schedule-overview .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
