@@ -16,11 +16,11 @@ class RoleMiddleware
     public function handle($request, Closure $next, ...$roles)
     {
         if (!auth()->check()) {
-            return redirect()->route('auth')->with('error', 'Please login first');
+            return redirect()->route('login')->with('error', 'Please login first');
         }
 
         if (!in_array(auth()->user()->role, $roles)) {
-            return redirect()->route('auth')->with('error', 'Unauthorized');
+            return redirect()->route('login')->with('error', 'Unauthorized');
         }
 
         return $next($request);
