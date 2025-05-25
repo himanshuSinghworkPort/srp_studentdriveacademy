@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ResourceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -78,4 +79,10 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'adminIndex'])->name('admin.dashboard');
+    Route::prefix('admin')->group(function () {
+        Route::get('/resources', [App\Http\Controllers\ResourceController::class, 'index'])->name('admin.resources');
+        Route::post('/resources', [App\Http\Controllers\ResourceController::class, 'store'])->name('admin.resources.store');
+        Route::put('/resources/{id}', [App\Http\Controllers\ResourceController::class, 'update'])->name('admin.resources.update');
+        Route::delete('/resources/{id}', [App\Http\Controllers\ResourceController::class, 'destroy'])->name('admin.resources.destroy');
+    });
 });
